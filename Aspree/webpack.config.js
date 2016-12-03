@@ -69,35 +69,7 @@ module.exports = {
       jQuery:"jquery",
       "window.jQuery":"jquery"
     }),
-    new ExtractTextPlugin("assets/css/style1.css"),
-    new HtmlWebpackPlugin({  // Also generate a test.html
-      favicon:'src/assets/icons/page_bird1.ico',
-      filename: 'linly.html',
-      title: 'Trioly template',
-      xfile:{
-        js: [publicPath+'assets/js/jquery.min.js']
-      },
-      template: 'src/pages/page1/page1.ejs',
-      inject: 'body',
-      minify:{
-        preserveLineBreaks:true,
-        removeComments:true
-      }
-    }),
-    new HtmlWebpackPlugin({  // Also generate a test.html
-      favicon:'src/assets/icons/page_bird1.ico',
-      filename: 'xuechengyue.html',
-      title: 'Trioly template',
-      xfile:{
-        js: [publicPath+'assets/js/jquery.min.js']
-      },
-      template: 'src/pages/page2/page2.ejs',
-      inject: 'body',
-      minify:{
-        preserveLineBreaks:true,
-        removeComments:true
-      }
-    })
+    new ExtractTextPlugin("assets/css/style1.css")
   ],
   devtool: '#eval-source-map'
 };
