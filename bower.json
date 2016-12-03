@@ -1,0 +1,21 @@
+{
+  "name": "Dribbling",
+  "description": "A Coding Project For Record Excellent DribbleArt",
+  "main": "",
+  "authors": [
+    "13816025562@139.com <13816025562@139.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zacard-orc/Dribbling",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "vue": "^2.1.4",
+    "mockjs": "^1.0.0"
+  }
+}
