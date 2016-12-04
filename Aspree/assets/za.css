@@ -1,5 +1,8 @@
 @font-face {font-family:CodeLight; src: url("fonts/CODELight.otf")}
 @font-face {font-family:Infinity; src: url("fonts/Infinity.ttf")}
+@font-face {font-family:Duepunt; src: url("fonts/duepuntozero_extralight.otf")}
+@font-face {font-family:RBNo2; src: url("fonts/RBNo2Light.otf")}
+@font-face {font-family:Avenirnext; src: url("fonts/avenirnextregular.otf")}
 
 /* flex frame*/
 .za-cter{
@@ -13,7 +16,7 @@
 }
 
 .za-nav-av{
-    flex: 0 0 10%;
+    flex: 0 0 15%;
 }
 
 .za-nav-menu{
@@ -32,15 +35,40 @@
     flex: 1;
     text-align: center;
 }
+.za-menu-lv2{
+    z-index: 10;
+    position: absolute;
+    width: 240px;
+    height: 60px;
+    background-color: rgb(90,171,232);
+    opacity:0.94;filter:alpha(opacity=94);
+    display: none;
+
+}
+.za-menu-lv2-try{
+    flex: 0 0 5%;
+}
+.za-menu-lv2-1{
+    flex: 1;
+}
+.za-menu-lv2-p{
+    margin: 0;
+    margin-top: 6px;
+    font-size: 11px;
+    font-family:  Helvetica;
+}
+
 .za-menu-img{
     opacity:0.57;filter:alpha(opacity=57);
 }
 .za-menu-p{
     margin-top:5px;
     margin-bottom: 5px;
-    font-size: 15px;
-    font-family:  Consolas;
+    font-size: 11px;
+    font-family:  Helvetica;
     color: rgb(98,103,109);
+    letter-spacing:1px;
+
 }
 
 .za-info{
@@ -49,7 +77,7 @@
     flex-direction:column;
 }
 .za-info-head{
-    flex: 0 0 8%;
+    flex: 0 0 7%;
     display: flex;
 }
 .za-info-head-alarm{
@@ -70,7 +98,7 @@
     flex: 0 0 5%;
 }
 .za-info-imgshow{
-    flex: 0 0 22%;
+    flex: 0 0 20%;
     display: flex;
     background:url('img/iBG.png') no-repeat;
     background-size:100%;
@@ -134,13 +162,32 @@
 .za-info-main{
     flex: 1;
     display: flex;
+    background-color: rgb(233,238,241);
+}
+
+.za-imain-left{
+  flex:0 0 30%;
+    display: flex;
+    flex-direction: column;
+}
+.za-imain-left-up{
+    flex:0 0 58%;
+    padding: 10px;
+    display: flex;
+}
+.za-imain-left-up-main{
+    flex: 1;
+    background-color: white;
+}
+.za-imain-left-bottom{
+    flex:1;
+    padding: 10px;
+}
+.za-imain-right{
+  flex:0 0 70%;
 }
 
 /*general style*/
-
-
-
-
 .bd{
     border: 1px orangered solid;
 }
