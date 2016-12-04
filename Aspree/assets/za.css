@@ -8,7 +8,41 @@
 .za-nav{
     flex:0 0 8%;
     background-color: rgb(28,28,28);
+    display: flex;
+    flex-direction: column;
 }
+
+.za-nav-av{
+    flex: 0 0 10%;
+}
+
+.za-nav-menu{
+    flex: 0 0 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.za-menu-u{
+    flex: 1;
+    max-height: 70px;
+    color: white;
+    display: flex;
+}
+.za-menu-ui{
+    flex: 1;
+    text-align: center;
+}
+.za-menu-img{
+    opacity:0.57;filter:alpha(opacity=57);
+}
+.za-menu-p{
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family:  Consolas;
+    color: rgb(98,103,109);
+}
+
 .za-info{
     flex:1;
     display: flex;
@@ -36,9 +70,67 @@
     flex: 0 0 5%;
 }
 .za-info-imgshow{
-    flex: 0 0 19%;
+    flex: 0 0 22%;
+    display: flex;
+    background:url('img/iBG.png') no-repeat;
+    background-size:100%;
+    justify-content:space-between;
+}
+.za-imgshow-lbs{
+    flex: 0 0 10%;
+}
+.za-imgshow-lbs-title {
+    margin-top: 10px;
     display: flex;
 }
+.za-lbs-icon{
+    flex: 0 0 20%;
+    text-align: center;
+}
+.za-lbs-title{
+    flex: 0 0 80%;
+    font-family: Infinity;
+    color: white;
+    margin-left: 5px;
+    padding-top: 2px;
+    letter-spacing:2px;
+}
+.za-imgshow-sun{
+    flex: 0 0 20%;
+    display: flex;
+}
+.za-imgshow-sun1{
+    flex: 1;
+    background-color: coral;
+    opacity:0.57;filter:alpha(opacity=57);
+}
+.za-imgshow-sun2{
+    flex:1;
+    background-color: rgb(171,52,203);
+    opacity:0.57;filter:alpha(opacity=57);
+}
+.za-sun-text{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+}
+.za-sun-textinner{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.za-sun-text-icon{
+    flex: 0 0 25%;
+    text-align: center;
+}
+.za-sun-text-text{
+    flex: 0 0 20%;
+    text-align: center;
+    color: white;
+    font-family: Infinity;
+}
+
 .za-info-main{
     flex: 1;
     display: flex;
@@ -66,4 +158,8 @@
     position:relative;
     display:table-cell;
     vertical-align:middle;
+}
+
+.img-circle{
+    border-radius:50%;
 }
