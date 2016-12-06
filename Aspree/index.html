@@ -11,7 +11,7 @@
 <body style="margin: 0;">
 <div class="za-cter">
   <!-- 导航区 -->
-  <div class="za-nav ">
+  <div class="za-nav">
     <div class="za-nav-av">
       <div class="cc_out">
         <div class="cc_mid">
@@ -159,22 +159,230 @@
     </div>
     <!-- 主要信息区 -->
     <div class="za-info-main">
+      <!-- 主区域-左 -->
       <div class="za-imain-left ">
-        <div class="za-imain-left-up bd">
-          <div class="za-imain-left-up-main bd">
-          1
+        <!-- 主区域-左上 -->
+        <div class="za-imain-left-up ">
+          <div class="za-imain-cter" id="vd_mail">
+            <div class="za-imain-mail-head " style="margin-bottom:1px;">
+              <div class="za-imail-head-side"></div>
+              <div class="za-imail-head-title">
+                <div class="cc_out">
+                  <div class="cc_mid">
+                    Mail
+                  </div>
+                </div>
+              </div>
+              <div class="za-imail-head-side  za-imail-head-side-right "></div>
+            </div>
+            <!-- 可模板 MailUnit-->
+            <div class="za-imain-mail-list" v-for="rowdata in xdata">
+              <div class="za-maillist-left">
+                <div class="cc_out">
+                  <div class="cc_mid">
+                    <img :src="rowdata.like"  width="70%">
+                  </div>
+                </div>
+              </div>
+              <div class="za-maillist-right">
+                <div class="za-maillist-up">
+                  <div class="za-mlist-up-av">
+                    <img :src="rowdata.avt"  class="img-circorner" width="90%">
+                  </div>
+                  <div class="za-mlist-up-spk">
+                    <div class="za-mlist-spk-up">
+                      {{rowdata.name }}
+                    </div>
+                    <div class="za-mlist-spk-bottom">
+                      {{rowdata.tips }}
+                    </div>
+                  </div>
+                  <div class="za-mlist-up-time">
+                    {{rowdata.time }}
+                  </div>
+                </div>
+                <div class="za-maillist-bottom">
+                  {{rowdata.content }}
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-        <div class="za-imain-left-bottom bd">
-          1
+        <!-- 主区域-左下 -->
+        <div class="za-imain-left-bottom" style="padding-top: 0;">
+          <div class="za-imain-cter" id="vd_notes">
+            <div class="za-block-head">
+              <div class="za-block-head-side">
+                <div class="cc_out">
+                  <div class="cc_mid">
+                    <img src="assets/img/iBookmark.png" width="33%">
+                  </div>
+                </div>
+              </div>
+              <div class="za-block-head-title" style="    color: #e650da;">
+                <div class="cc_out">
+                  <div class="cc_mid" >
+                    Notes
+                  </div>
+                </div>
+              </div>
+              <div class="za-block-head-side">
+                <div class="cc_out">
+                  <div class="cc_mid">
+                    <img src="assets/img/iPlus.png" width="30%">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <my-notes :message="xdata"></my-notes>
+          </div>
         </div>
       </div>
-      <div class="za-imain-right bd">
-        2
+
+      <!-- 主区域-右上-->
+      <div class="za-imain-right">
+        <!-- 右上 -->
+        <div class="za-imain-right-up">
+            <div class="za-imain-cter">
+              1
+            </div>
+        </div>
+        <div class="za-imain-right-bottom">
+          <!-- 右下左-->
+          <div class="za-irightb-block" style="padding-right: 5px;padding-bottom: 10px;">
+            <div class="za-imain-cter" id="vd_contacts">
+              <div class="za-block-head">
+                <div class="za-block-head-side">
+                  <div class="cc_out">
+                    <div class="cc_mid">
+                      <img src="assets/img/iFind.png" width="33%">
+                    </div>
+                  </div>
+                </div>
+                <div class="za-block-head-title" style="    color: #A4C74E;">
+                  <div class="cc_out">
+                    <div class="cc_mid" >
+                      Contacts
+                    </div>
+                  </div>
+                </div>
+                <div class="za-block-head-side">
+                  <div class="cc_out">
+                    <div class="cc_mid">
+                      <img src="assets/img/iPlus_green.png" width="30%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <my-contacts :message="xdata"></my-contacts>
+            </div>
+          </div>
+          <!-- 右下右-->
+          <div class="za-irightb-block " style="padding-left: 5px;padding-right: 10px;padding-bottom: 10px;">
+            <div class="za-imain-cter za-wther" id="wther_bg"></div>
+            <div class="za-wther-filter" id="wther_filter"></div>
+            <div class="za-wther-main" id="wther_main">
+              <!-- 天气标题-->
+                <div class="za-block-head">
+                    <div class="za-block-head-side" style="flex: 0 0 20%;">
+                      <div class="cc_out">
+                        <div class="cc_mid">
+                          <img src="assets/img/iLeft.png" width="20%">
+                          <img src="assets/img/iRight.png" width="20%">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="za-block-head-title" style="color: white;">
+                      <div class="cc_out">
+                        <div class="cc_mid" >
+                          Weather
+                        </div>
+                      </div>
+                    </div>
+                    <div class="za-block-head-side">
+                      <div class="cc_out">
+                        <div class="cc_mid">
+                          <img src="assets/img/iPlus_white.png" width="30%">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              <!-- 天气明细 -->
+                <div class="za-wther-main-info ">
+                  <div class="za-wminfo-left">
+                    <p class="za-wminfo-left-p1">Paris,France</p>
+                    <p class="za-wminfo-left-p2">Tuesday,7:00 PM</p>
+                    <p class="za-wminfo-left-p2">Clear</p>
+                  </div>
+                  <div class="za-wminfo-right">
+                    <div>
+                      <img src="assets/img/iSun.png"  width="40%">
+                    </div>
+                    <div class="za-wminfo-right-p1 ">
+                      43°
+                      <p class="za-wminfo-right-tips">
+                        <span style="color: rgb(191,211,213)">F°</span>|C°</p>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+            <!-- 天气图表模仿 -->
+            <div class="za-wther-chart" id="wther_chart">
+              <img src="assets/img/iWeather_chart.png" width="100%"/>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </div>
 </div>
+
+
+
+
 </body>
+<script type="text/x-template" id="tpl_maillist">
+
+
+</script>
+<!--notes-->
+<script type="text/x-template" id="tpl_noteslist">
+  <div class="za-block-body">
+    <div class="za-block-infobar" v-for="rowdata in message">
+      <div class="cc_out">
+        <div class="cc_mid za-notes-text" style="text-align: left">
+          {{rowdata.notes}}
+          <div :class="[rowdata.mainClass, rowdata.colorClass]">
+            {{rowdata.labeltext}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<!--contacts -->
+<script type="text/x-template" id="tpl_contactslist">
+  <div class="za-block-body">
+    <div class="za-block-infobar" v-for="rowdata in message">
+      <div class="za-cocts-avb">
+        <div class="cc_out">
+          <div class="cc_mid">
+            <img :src="rowdata.ava" class="img-circorner" width="85%">
+          </div>
+        </div>
+      </div>
+      <div class="za-cocts-info ">
+          <p class="za-cocts-name">{{rowdata.name}}</p>
+          <p class="za-cocts-email">{{rowdata.email}}</p>
+      </div>
+    </div>
+  </div>
+</script>
+
 <script src="assets/za.js" type="text/javascript"></script>
 </html>

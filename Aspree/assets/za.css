@@ -3,6 +3,7 @@
 @font-face {font-family:Duepunt; src: url("fonts/duepuntozero_extralight.otf")}
 @font-face {font-family:RBNo2; src: url("fonts/RBNo2Light.otf")}
 @font-face {font-family:Avenirnext; src: url("fonts/avenirnextregular.otf")}
+@font-face {font-family:Adele; src: url("fonts/adele-light.ttf")}
 
 /* flex frame*/
 .za-cter{
@@ -98,7 +99,7 @@
     flex: 0 0 5%;
 }
 .za-info-imgshow{
-    flex: 0 0 20%;
+    flex: 0 0 17%;
     display: flex;
     background:url('img/iBG.png') no-repeat;
     background-size:100%;
@@ -166,30 +167,274 @@
 }
 
 .za-imain-left{
-  flex:0 0 30%;
+  flex:0 0 33%;
     display: flex;
     flex-direction: column;
 }
 .za-imain-left-up{
-    flex:0 0 58%;
+    flex:0 0 60%;
     padding: 10px;
     display: flex;
+
 }
-.za-imain-left-up-main{
+.za-imain-cter{
     flex: 1;
     background-color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
+.za-imain-mail-head{
+    flex:0 0 15%;
+    display: flex;
+    justify-content:space-between;
+}
+.za-imail-head-side{
+    flex: 0 0 12%;
+}
+.za-imail-head-side-right{
+    background:url('img/iMailCorner.png') no-repeat;
+    background-size:100%;
+}
+.za-imail-head-title{
+    color: red;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+.za-imain-mail-list{
+    flex:1;
+    display: flex;
+    border-bottom: 1px gainsboro solid;
+}
+.za-maillist-left{
+    flex:0 0 9%;
+    margin-right: 7px;
+}
+.za-maillist-right{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.za-maillist-up{
+    /*flex: 1;*/
+    display: flex;
+    height: 40px;
+    padding-top: 5px;
+}
+.za-mlist-up-av{
+    /*flex: 0 0 20%;*/
+    width: 40px;
+    margin-right: 5px;
+}
+.za-mlist-up-spk{
+    flex: 0 0 60%;
+    display: flex;
+    flex-direction: column;
+}
+.za-mlist-spk-up{
+    flex: 1;
+    font-family: Arial;
+    font-size: 13px;
+    color: lightgrey;
+}
+.za-mlist-spk-bottom{
+    flex: 1;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.za-mlist-up-time{
+    flex: 0 0 22%;
+    font-family: Arial;
+    font-size: 10px;
+    text-align: right;
+    color: lightgrey;
+
+}
+.za-maillist-bottom{
+    margin-top: 5px;
+    flex: 1;
+    font-size: 12px;
+    text-align: left;
+    color: dimgrey;
+    line-height: 17px;
+}
+.za-block-head{
+    height: 23px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.za-block-body{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.za-block-head-side{
+    flex: 0 0 12%;
+}
+.za-block-head-title{
+    flex:1;
+    font-family: Arial;
+    font-size: 18px;
+}
+.za-block-infobar{
+    flex:1;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-bottom: 1px gainsboro solid;
+    display: flex;
+}
+.za-notes-text{
+    text-align: left;
+    font-family: Arial;
+    line-height: 20px;
+    font-size: 13px;
+    color: dimgrey;
+}
+.za-notes-label{
+    float:right;
+    /*width: 55px;*/
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    font-size: 9px;
+    font-family: Consolas;
+}
+
 .za-imain-left-bottom{
     flex:1;
     padding: 10px;
+    display: flex;
 }
 .za-imain-right{
-  flex:0 0 70%;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.za-imain-right-up{
+    flex: 0 0 58%;
+    display: flex;
+    padding: 10px;
+    padding-left: 0;
+}
+.za-imain-right-bottom{
+    flex: 1;
+    display: flex;
+}
+.za-irightb-block{
+    flex: 1;
+    display: flex;
+}
+.za-cocts-avb{
+    width: 40px;
+    padding: 3px;
+}
+.za-cocts-info{
+    flex: 1;
+    padding-top: 3px;
+}
+.za-cocts-name{
+    margin: 0;
+    font-size: 14px;
+    font-family: Calibri;
+}
+.za-cocts-email{
+    margin: 0;
+    margin-top: 2px;
+    font-size: 12px;
+    font-family: Calibri;
+    color: rgb(205,205,205);
+}
+.za-wther{
+    background:url('img/iWeather_bg.png') no-repeat;
+    background-size:100%;
+}
+.za-wther-filter{
+    z-index: 6;
+    position: absolute;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#00BFFF),to(#8EF6EB));
+    opacity:0.85;filter:alpha(opacity=85);
+}
+
+.za-wther-main{
+    z-index: 7;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.za-wther-chart{
+    z-index: 8;
+    position: absolute;
+    bottom: 10px;
+}
+
+.za-wther-main-info{
+    flex: 0 0 40%;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 8px;
+}
+.za-wminfo-left{
+    flex:1;
+}
+.za-wminfo-left-p1{
+    margin: 0;
+    color: white;
+    font-size: 17px;
+    font-family: Optima;
+    letter-spacing: 1px;
+}
+.za-wminfo-left-p2{
+    margin: 0;
+    margin-top: 2px;
+    color: white;
+    font-size: 8px;
+    font-family: Optima;
+    /*letter-spacing: 1px;*/
+
+}
+.za-wminfo-right{
+    flex:1;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.za-wminfo-right-p1{
+    color: white;
+    font-family: Optima;
+    font-size: 30px;
+    padding-top: 1px;
+    margin-left: 2px;
+}
+.za-wminfo-right-tips{
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 0;
+    font-size:12px;
 }
 
 /*general style*/
 .bd{
     border: 1px orangered solid;
+}
+.fthin{
+    font-family: Infinity;
+}
+.flight{
+    font-family: Consolas;
+}
+.fmonaca{
+    font-family: 'Monaco', courier, monospace;
 }
 
 .cc_out{
@@ -209,4 +454,16 @@
 
 .img-circle{
     border-radius:50%;
+}
+.img-circorner{
+    border-radius: 3px;
+}
+.cr_green{
+    background-color: rgb(32,213,195);
+}
+.cr_gold{
+    background-color: rgb(226,155,37);
+}
+.cr_blue{
+    background-color: rgb(13,170,218);
 }
