@@ -13,6 +13,6 @@
 > <div>
 <span><img src="DemoImg/logo_vue.png" width="40px"/></span>&nbsp;&nbsp;
 <span><img src="DemoImg/logo_iconfont.png" width="120px" /></span>&nbsp;&nbsp;
-<span><img src="DemoImg/logo_dribble.jpg" width="45px" /></span>
+<span><img src="DemoImg/logo_dribble.jpg" width="43px" /></span>
 </div>
 
