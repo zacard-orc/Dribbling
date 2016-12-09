@@ -5,9 +5,9 @@
  ![image](https://github.com/zacard-orc/Dribbling/raw/master/DemoImg/001_Aspree.jpg)
 
 
-> 来自于对<a href="https://dribbble.com/zulal">Zulal Ahmad</a>作品<a href="https://dribbble.com/shots/1400070-Aspree">Aspree</a>的模仿</br>
+> 来自于对<a href="https://dribbble.com/zulal">Zulal Ahmad</a>作品<a href="https://dribbble.com/shots/1400070-Aspree">Aspree</a>的模仿，不支持ie10-</br>
 > 
-> From <a href="https://dribbble.com/zulal">Zulal Ahmad</a>'s production imitation</br>
+> From <a href="https://dribbble.com/zulal">Zulal Ahmad</a>'s production imitation,not support IE10-</br>
 >
 > Thanks to：
 > <div>
