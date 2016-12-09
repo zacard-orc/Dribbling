@@ -12,7 +12,7 @@
 > Thanks to：
 > <div>
 <span><img src="DemoImg/logo_vue.png" width="40px"/></span>&nbsp;&nbsp;
-<span><img src="DemoImg/logo_iconfont.png" width="120px" /></span>
-<span><img src="DemoImg/logo_dribble.jpg" width="30px" /></span>
+<span><img src="DemoImg/logo_iconfont.png" width="120px" /></span>&nbsp;&nbsp;
+<span><img src="DemoImg/logo_dribble.jpg" width="50px" /></span>
 </div>
 
