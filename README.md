@@ -10,6 +10,6 @@
 > 感谢/Thanks to：
 > <div>
 <span><img src="DemoImg/logo_vue.png" width="40px" /></span>
-<span><img src="DemoImg/logo_iconfont.png" width="40px" /></span>
+<span><img src="DemoImg/logo_iconfont.png" width="120px" /></span>
 </div>
 
