@@ -243,11 +243,63 @@
       <!-- 主区域-右上-->
       <div class="za-imain-right">
         <!-- 右上 -->
-        <div class="za-imain-right-up">
-            <div class="za-imain-cter">
-              1
+        <div class="za-imain-right-up" id="vd_calendar">
+            <div class="za-imain-cter" style="padding: 10px;">
+              <!-- 日历头 -->
+              <div class="za-block-head " style="padding: 0;">
+                <div class="za-cd-head-left" style="">
+                  <div class="za-cd-head-left-arrow">
+                    <div class="cc_out">
+                      <div class="cc_mid" >
+                        <img src="assets/img/iLeft_black.png" width="30%">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="cc_out">
+                      <div class="cc_mid za-cd-head-left-text" >
+                        January 2014
+                      </div>
+                    </div>
+                  </div>
+                  <div class="za-cd-head-left-arrow" style="text-align: right">
+                    <div class="cc_out">
+                      <div class="cc_mid" >
+                        <img src="assets/img/iRight_black.png" width="30%">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="za-block-head-title" style="    color: #F1C561;">
+                  <div class="cc_out">
+                    <div class="cc_mid" >
+                      Calendar
+                    </div>
+                  </div>
+                </div>
+                <div class="za-cd-head-left">
+                  <div class="cc_out">
+                    <div class="cc_mid"  style="text-align: right;padding-right:10px;">
+                      <img src="assets/img/iPlus_yellow.png" width="12%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 日历身体 -->
+              <div class="za-cd-body">
+                <!-- 事项 -->
+
+                <my-events :message="evdata"></my-events>
+                <div class="za-cd-body-space"></div>
+                <div class="za-cd-body-cd">
+                  <my-cdhead :message="cdhead"></my-cdhead>
+                  <my-cddate :message="cdwd"></my-cddate>
+
+                </div>
+              </div>
             </div>
         </div>
+        <!-- 右下 -->
         <div class="za-imain-right-bottom">
           <!-- 右下左-->
           <div class="za-irightb-block" style="padding-right: 5px;padding-bottom: 10px;">
@@ -295,7 +347,7 @@
                     </div>
                     <div class="za-block-head-title" style="color: white;">
                       <div class="cc_out">
-                        <div class="cc_mid" >
+                        <div class="cc_mid" style="font-family: CACula" >
                           Weather
                         </div>
                       </div>
@@ -383,6 +435,61 @@
     </div>
   </div>
 </script>
+
+<!-- event data-->
+<script type="text/x-template"  id="tpl_eventslist">
+  <div class="za-cd-body-left" >
+      <div class="za-cd-eventarea" v-for="rowdata in message">
+        <div class="za-cd-event-i">
+          <img :src="rowdata.evimg"  width="20px">
+        </div>
+        <div class="za-cd-event-f">
+          <div class="cc_out">
+            <div class="cc_mid" style="text-align: left">
+              <p class="za-cd-event-x1">{{rowdata.evname}}</p>
+              <p class="za-cd-event-x2">{{rowdata.evdate}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</script>
+
+<!-- cd head-->
+<script type="text/x-template" id="tpl_cdhead">
+  <div class="za-cd-cd-head">
+    <div class="za-cd-weekday" v-for="weekday in message">
+      <div class="cc_out">
+        <div class="cc_mid" >
+          {{weekday}}
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<!-- cd body-->
+<script type="text/x-template" id="tpl_cddate">
+  <div class="za-cd-cd-body">
+    <div class="za-cd-date" v-for="rowdata in message">
+      <div class="cc_out">
+        <div class="cc_mid" >
+          <span v-if="rowdata.monthlab!='now'" style="color: darkgrey;">{{rowdata.evdate}}</span>
+          <span v-else>{{rowdata.evdate}}</span>
+          <span v-if="rowdata.evid" class="za-cd-date-event">
+            <img v-if="rowdata.evid==0" src="assets/img/iCircle_blue.png" width="12px"/>
+            <img v-if="rowdata.evid==1" src="assets/img/iCircle_gold.png" width="12px"/>
+            <img v-if="rowdata.evid==2" src="assets/img/iCircle_green.png" width="12px"/>
+            <img v-if="rowdata.evid==3" src="assets/img/iCircle_rose.png" width="12px"/>
+
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+
 
 <script src="assets/za.js" type="text/javascript"></script>
 </html>

@@ -50,6 +50,27 @@ Vue.component('my-notes', {
   }
 });
 
+Vue.component('my-cdhead', {
+  template: '#tpl_cdhead',
+  props: {
+    message:Array
+  }
+});
+
+Vue.component('my-cddate', {
+  template: '#tpl_cddate',
+  props: {
+    message:Array
+  }
+});
+
+Vue.component('my-events', {
+  template: '#tpl_eventslist',
+  props: {
+    message:Array
+  }
+});
+
 Vue.component('my-contacts', {
   template: '#tpl_contactslist',
   props: {
@@ -81,10 +102,7 @@ new Vue({
   }
 });
 
-
-
-
-var bb=new Vue({
+new Vue({
   el: '#vd_notes',
   data:{
     xdata:[
@@ -130,5 +148,63 @@ new Vue({
         email:'FLopez@twitter.com'
       }
     ]
+  }
+});
+
+new Vue({
+  el: '#vd_calendar',
+  data:{
+    evdata:[
+      {
+        evimg:'assets/img/iCircle_green.png',
+        evname:'Dinner with her',
+        evdate:'Tus,7 Dec'
+      },
+      {
+        evimg:'assets/img/iCircle_rose.png',
+        evname:'Meeting Tim',
+        evdate:'Tus,7 Dec'
+      },
+      {
+        evimg:'assets/img/iCircle_blue.png',
+        evname:'Starting exercise',
+        evdate:'Sat,16 Dec'
+      },
+      {
+        evimg:'assets/img/iCircle_gold.png',
+        evname:'Join conferance',
+        evdate:'Fri,29 Jan'
+      }
+    ],
+    cdhead:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+    cdwd:[]  //30
+  },
+  mounted:function(){
+    var now=new Date();
+    //算月首和上月段
+    var monthfirst=new Date(now.valueOf()-(now.getDate()-1)*86400*1000)
+    var lastmonthneedcomputedays=7-monthfirst.getDay();
+
+    console.log(Math.random().toFixed(1)*10 % 4)
+    //上月日期
+    for(var i=lastmonthneedcomputedays;i>=0;i--){
+      var tmpO={};
+      var monthlastfirst=new Date(now.valueOf()-(now.getDate()-1+i+1)*86400*1000);
+      tmpO['monthlab']='last';
+      tmpO['evdate']=monthlastfirst.getDate();
+      this.cdwd.push(tmpO);
+    }
+
+    //本月日期
+    for(var i=1;i<35-lastmonthneedcomputedays;i++){
+      var tmpO={};
+      tmpO['monthlab']='now';
+      tmpO['evdate']=i;
+      if(Math.random()>0.5){
+        tmpO['evid']=Math.random().toFixed(1)*10 % 4;
+      }
+      this.cdwd.push(tmpO)
+    }
+    console.log(this.cdwd)
   }
 });

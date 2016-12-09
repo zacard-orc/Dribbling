@@ -4,6 +4,7 @@
 @font-face {font-family:RBNo2; src: url("fonts/RBNo2Light.otf")}
 @font-face {font-family:Avenirnext; src: url("fonts/avenirnextregular.otf")}
 @font-face {font-family:Adele; src: url("fonts/adele-light.ttf")}
+@font-face {font-family:CACula; src: url("fonts/CA%20Cula%20Light.otf")}
 
 /* flex frame*/
 .za-cter{
@@ -198,8 +199,8 @@
 }
 .za-imail-head-title{
     color: red;
-    font-family: Arial;
-    font-size: 18px;
+    font-family: CACula;
+    font-size: 20px;
 }
 
 .za-imain-mail-list{
@@ -276,8 +277,9 @@
 }
 .za-block-head-title{
     flex:1;
-    font-family: Arial;
-    font-size: 18px;
+    font-family: CACula;
+    font-size: 20px;
+    /*letter-spacing: 0.5px;*/
 }
 .za-block-infobar{
     flex:1;
@@ -422,6 +424,99 @@
     margin: 0;
     font-size:12px;
 }
+.za-cd-head-left{
+    flex: 0 0 20%;display:flex;justify-content: space-between
+}
+.za-cd-head-left-arrow{
+    flex:0 0 20%;
+}
+.za-cd-head-left-text{
+    padding-top: 1px;
+    font-size: 11px;
+    font-family: Arial;
+}
+
+.za-cd-body{
+    flex: 1;
+    display: flex;
+}
+.za-cd-body-left{
+    flex: 0 0 23%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.za-cd-eventarea{
+    flex:0 0 20%;
+    display: flex;
+}
+.za-cd-event-i{
+    flex: 0 0 15%;
+    padding-top: 1px;
+}
+.za-cd-event-f{
+    flex: 1;
+    padding: 2px;
+}
+.za-cd-event-x1{
+    margin: 0;
+    color: dimgrey;
+    font-size: 14px;
+    font-family: Calibri;
+
+}
+.za-cd-event-x2{
+    margin: 0;
+    margin-top:2px;
+    color: darkgrey;
+    font-size: 12px;
+    font-family: Calibri;
+
+}
+.za-cd-body-space{
+    flex: 0 0 1%;
+}
+.za-cd-body-cd{
+    flex: 1;
+}
+.za-cd-cd-head{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+.za-cd-cd-body{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    border-left:1px lightgrey solid;
+    border-bottom:1px lightgrey solid;
+    border-right:1px lightgrey solid;
+
+}
+.za-cd-weekday{
+    flex: 1;
+    font-family: Calibri;
+    color:darkgrey;
+    font-size: 13px;
+}
+.za-cd-date{
+    width: 14.28%;
+    border-top:1px lightgrey solid;
+    font-family: Calibri;
+    font-size: 13px;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+}
+.za-cd-block{
+    flex: 0 0 33%;
+    text-align: center;
+}
+.za-cd-date-event{
+    margin: 0;
+    padding-top: 4px;
+}
 
 /*general style*/
 .bd{
@@ -459,11 +554,14 @@
     border-radius: 3px;
 }
 .cr_green{
-    background-color: rgb(32,213,195);
+    background-color: #20D5C3;
+}
+.cr_rose{
+    background-color: #CD61FB;
 }
 .cr_gold{
-    background-color: rgb(226,155,37);
+    background-color: #E8A100;
 }
 .cr_blue{
-    background-color: rgb(13,170,218);
+    background-color: #0DAADA;
 }
