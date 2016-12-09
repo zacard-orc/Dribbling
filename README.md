@@ -11,8 +11,8 @@
 >
 > Thanks to：
 > <div>
-<span><img src="DemoImg/logo_vue.png" width="40px"/></span>&nbsp;&nbsp;
-<span><img src="DemoImg/logo_iconfont.png" width="120px" /></span>&nbsp;&nbsp;
-<span><img src="DemoImg/logo_dribble.jpg" width="43px" /></span>
+<span><img src="DemoImg/logo_vue.png" height="40px"/></span>&nbsp;&nbsp;
+<span><img src="DemoImg/logo_iconfont.png" height="40px" /></span>&nbsp;&nbsp;
+<span><img src="DemoImg/logo_dribble.jpg" height="40px" /></span>
 </div>
 
