@@ -9,7 +9,7 @@
 > 
 > From <a href="https://dribbble.com/zulal">Zulal Ahmad</a>'s production imitation</br>
 >
-> 感谢/Thanks to：
+> Thanks to：
 > <div>
 <span><img src="DemoImg/logo_vue.png" width="40px"/></span>&nbsp;&nbsp;
 <span><img src="DemoImg/logo_iconfont.png" width="120px" /></span>
