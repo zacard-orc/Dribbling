@@ -4,8 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta charset="UTF-8">
   <title>竹编工坊</title>
+  <link rel="stylesheet" href="assets/bootstrap.min.css" type="text/css"/>
+  <link rel="stylesheet" href="assets/slider.css" type="text/css"/>
   <link rel="stylesheet" href="assets/zaba.css" type="text/css"/>
   <script src="assets/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/bootstrap-slider.js" type="text/javascript"></script>
+
 </head>
 <body class="fixbody">
 <div class="za-container bd" id="z_container">
@@ -68,8 +72,8 @@
         </div>
       </div>
     </div>
-    <div class="za-head-right bd ">
-          <span class="za-right-info">登录:wonderful</span>
+    <div class="za-head-right ">
+          <span class="za-right-info ">登录:wonderful</span>
     </div>
   </div>
   <!-- 身段 -->
@@ -87,43 +91,126 @@
         悬浮框
         </div>
       </div>
-      <div class="za-body-up-center bd">
+      <div class="za-body-up-center">
 
       </div>
-      <div class="za-body-up-right ">
-        <div class="za-body-upright-seg za-bdupright-info ">
-            <img src="assets/img/i_fb.png"  height="10%">
-            <img src="assets/img/i_tw.png"  height="10%">
+      <div class="za-body-up-right  ">
+        <div class="za-body-upright-seg  za-bdupright-info ">
+          <div class="za-bdupright-info-main ">
+            <img src="assets/img/i_fb.png" class="za-share1">
+            <img src="assets/img/i_tw.png"  class="za-share1">
+          </div>
+        </div>
+        <div class="za-body-upright-seg za-share-intro">
+            xxxxxxxxxxxx
         </div>
 
       </div>
     </div>
     <!-- 底下按钮区-->
-    <div class="za-body-down bd">
-      <div class="za-bddown-seg bd">
-        1
+    <div class="za-body-down">
+      <div class="za-bddown-seg za-bddown-seg-long ">
+        <div class="za-bfun-title za-bfun-titlebd">造型</div>
+        <div class="za-bfun1">
+          <div class="za-bfun1-seg">
+            <img class="img-circle bs blink" src="assets/img/i_type_1.png" width="80%" >
+          </div>
+          <div class="za-bfun1-seg">
+            <img class="img-circle bs blink" src="assets/img/i_type_2.png" width="80%" >
+          </div>
+          <div class="za-bfun1-seg">
+            <img class="img-circle bs blink" src="assets/img/i_type_3.png" width="80%" >
+          </div>
+        </div>
       </div>
       <div class="za-bddown-seg">
-        2
+        <div class="za-bfun-title za-bfun-titlebd">疏密</div>
       </div>
       <div class="za-bddown-seg">
-        3
+        <div class="za-bfun-title za-bfun-titlebd">纹理</div>
+        <div class="za-bfun3 za-bfun3-spec">
+          <div class="za-bfun3-seg">
+            <img class="blink" src="assets/img/i_wen_1.png" width="80%" >
+          </div>
+          <div class="za-bfun3-seg">
+            <img class="blink" src="assets/img/i_wen_2.png" width="80%" >
+          </div>
+          <div class="za-bfun3-seg">
+            <img class="blink"  src="assets/img/i_wen_3.png" width="80%" >
+          </div>
+        </div>
       </div>
       <div class="za-bddown-seg">
-        4
+        <div class="za-bfun-title za-bfun-titlebd">尺寸</div>
+
+      </div>
+      <div class="za-bddown-seg za-bddown-seg-long">
+        <div class="za-bfun-title za-bfun-titlebd">材料</div>
+        <div class="za-bfun5">
+          <div class="za-bfun5-seg ">
+            <div class="za-bfun5-seg-l">
+              <div class="cc_out">
+                <div class="cc_mid_left ">
+                  竹
+                </div>
+              </div>
+            </div>
+            <div class="za-bfun5-seg-r ">
+              <div class="za-bfun5-circle cr_gold blink"></div>
+              <div class="za-bfun5-circle cr_coffee blink"></div>
+              <div class="za-bfun5-circle cr_coffee_deep blink"></div>
+            </div>
+          </div>
+          <div class="za-bfun5-seg ">
+            <div class="za-bfun5-seg-l ">
+              <div class="cc_out">
+              <div class="cc_mid_left ">塑料
+              </div>
+            </div>
+            </div>
+            <div class="za-bfun5-seg-r ">
+              <div class="za-bfun5-circle cr_green blink"></div>
+              <div class="za-bfun5-circle cr_blue blink"></div>
+              <div class="za-bfun5-circle cr_rose blink"></div>
+              <div class="za-bfun5-circle cr_purple blink"></div>
+            </div>
+          </div>
+
+        </div>
       </div>
       <div class="za-bddown-seg">
-        5
+        <div class="za-bfun-title za-bfun-titlebd">价格</div>
+        <div class="za-bfun6-seg">
+          <div class="za-bfun6-hj-name">$40</div>
+          <div class="za-bfun6-hj-tips">小计</div>
+        </div>
+        <div class="za-bfun-title za-bfun-titlebd za-bfun6-titlename">名称</div>
+        <div class="za-bfun6-seg za-bfun6-name">
+          陈年紫竹茶托
+        </div>
       </div>
-      <div class="za-bddown-seg">
-        6
-      </div>
-      <div class="za-bddown-seg za-bfun7 bd" id="b_7">
-        <div class="za-bfun7-btnarea">
-          123
+      <div class="za-bddown-seg za-bfun7 " id="b_7">
+        <div class="za-bfun7-btnarea ">
+          <div class="za-bfun-title"></div>
+          <div class="za-bfun-main">
+            <div class="za-btn">
+              <div class="cc_out">
+                <div class="cc_mid ">
+                  保存
+                </div>
+              </div>
+            </div>
+            <div class="za-btn za-btn2">
+              <div class="cc_out">
+                <div class="cc_mid ">
+                  购买
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="za-bfun7-logo">
-          123
+          <img src="assets/img/i_logo_1.png"  width="80%">
         </div>
       </div>
     </div>

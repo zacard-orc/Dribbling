@@ -17,8 +17,11 @@
 }
 .za-head-right{
     flex: 0 0 20%;
-    padding-top: 3.5%;
-    padding-left: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    /*padding-top: 3.5%;*/
+    /*text-align: right;*/
+    /*padding-left: 70px;*/
 }
 .za-hd-ct-menu{
     flex: 1;
@@ -39,9 +42,10 @@
     padding-top: 22px;
 }
 .za-right-info{
+    flex: 0 0 60%;
     font-family: Calibri;
     font-size: 12px;
-    text-align: center;
+    padding-top: 40px;
 }
 
 .za-body-main{
@@ -55,7 +59,7 @@
     flex-direction: column;
 }
 .za-body-up{
-    flex: 0 0 75%;
+    flex: 0 0 72%;
     display: flex;
 }
 .za-body-up-left{
@@ -67,6 +71,7 @@
     flex: 0 0 55%;
 }
 .za-body-up-right{
+    /*flex: 0 0 10%;*/
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -75,7 +80,7 @@
     flex: 1;
     padding-top: 0.5%;
     padding-left: 3%;
-    padding-right: 6%;
+    padding-right: 5%;
     display: flex;
 }
 
@@ -86,23 +91,146 @@
     flex: 1;
 }
 .za-body-upright-seg{
-    flex: 0 0 5%;
-    margin-top: 20px;
+    flex: 0 0 10%;
+    margin-top: 14px;
+    display: flex;
 }
+.za-share-intro{
+    font-size: 15px;
+}
+
+
 .za-bdupright-info{
-    padding-left:65px;
+    display: flex;
+    flex-direction: row-reverse;
+    /*padding-left: 70px;*/
+    /*left:65px;*/
+}
+.za-bdupright-info-main{
+    flex: 0 0 60%;
+}
+.za-share1{
+    max-height: 25px;
 }
 
 .za-bddown-seg{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2px;
+    padding-right: 3px;
 }
-.za-bfun7{
+.za-bddown-seg-long{
+    flex:0 0 18%;
+
+}
+.za-bfun-title{
+    flex: 0 0 15%;
+    font-size: 15px;
+}
+.za-bfun-titlebd{
+    border-bottom: 2px solid #303030;
+}
+.za-bfun-main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.za-bfun1,.za-bfun3{
+    padding-top: 5px;
+    flex: 1;
     display: flex;
 }
-.za-bfun7-btnarea{
+.za-bfun3-spec{
+    margin-top: 5%;
+}
+.za-bfun1-seg,.za-bfun3-seg{
     flex: 1;
 }
 
+.za-bfun5{
+    padding-top: 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.za-bfun5-seg{
+    flex: 0 0 22%;
+    display: flex;
+    margin-top: 8px;
+}
+.za-bfun5-seg-l{
+    flex: 0 0 22%;
+    font-size: 14px;
+}
+.za-bfun5-seg-r{
+    flex: 1;
+    display: flex;
+}
+.za-bfun5-circle{
+    flex: 0 0 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.za-bfun6-seg{
+    flex: 0 0 15%;
+    display: flex;
+    margin-top:10px;
+    font-size: 14px;
+}
+.za-bfun6-hj-name{
+    flex: 0 0 40%;
+
+}
+.za-bfun6-hj-tips{
+    flex: 0 0 60%;
+    text-align: right;
+    font-size: 11px;
+    line-height: 14px;
+}
+.za-bfun6-titlename{
+    margin-top:12px;
+
+}
+.za-bfun6-name{
+    font-size: 11px;
+    line-height: 14px;
+    margin-top:5px;
+
+}
+
+.za-bfun7{
+    display: flex;
+    flex-direction: row;
+}
+.za-bfun7-btnarea{
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+}
+.za-bfun7-logo{
+    flex: 1;
+    text-align: right;
+}
+.za-btn{
+    flex: 0 0 25%;
+    background-color: #303030;
+    color: white;
+    width: 90%;
+    /*margin-top: 2px;*/
+    /*margin-bottom: 2px;*/
+    margin-left: 2px;
+    font-size: 11px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.za-btn2{
+    margin-top: 20px;
+}
 
 /*general style*/
 .bd{
@@ -138,6 +266,12 @@
     display:table-cell;
     vertical-align:middle;
 }
+.cc_mid_left{
+    text-align:left;
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+}
 
 .img-circle{
     border-radius:50%;
@@ -154,6 +288,28 @@
 .cr_gold{
     background-color: #E8A100;
 }
+.cr_coffee{
+    background-color: #AD722F;
+}
+.cr_coffee_deep{
+    background-color: #974A14;
+}
 .cr_blue{
     background-color: #0DAADA;
+}
+.cr_rose{
+    background-color: #BD6F6A;
+}
+.cr_purple{
+    background-color: #7768C4;
+}
+.bs{
+    -webkit-box-shadow: 3px 3px 3px #373737;
+    -moz-box-shadow: 3px 3px 3px #373737;
+    box-shadow: 3px 3px 3px #373737;
+}
+.blink:hover{
+    -webkit-box-shadow: 0 0 3px 3px #F0D583;
+    -moz-box-shadow: 0 0 3px 3px #F0D583;
+    box-shadow: 0 0 3px 3px #F0D583;
 }
