@@ -87,7 +87,7 @@
     <div class="za-body-up ">
       <div class="za-body-up-left">
         <div class="za-body-upleft-up">
-          <div class="cc_out" id="arhv_close">
+          <div class="cc_out" >
             <div class="cc_mid ">
               <img src="assets/img/body_title.png"  width="60%">
             </div>
@@ -96,9 +96,10 @@
         <!-- 悬浮框 -->
         <div class="za-body-upleft-down">
            <div  id="arhv" class="za-panel-hover ">
+             <div class="za-panel-seg-tiny"></div>
              <!-- 关闭 -->
              <div class="za-panel-seg-short za-panel-closemain ">
-               <div class="za-panel-close ">
+               <div class="za-panel-close" id="arhv_close">
                  <div class="cc_out">
                    <div class="cc_mid ">
                      <img src="assets/img/i_close.png" width="35%">
@@ -106,6 +107,7 @@
                  </div>
                </div>
              </div>
+             <!-- 产品类型-->
              <div class="za-panel-seg-med ">
                 <div class="za-panel-prodtype-name">
                   <div class="cc_out" >
@@ -125,7 +127,8 @@
                   </div>
                 </div>
              </div>
-             <div class="za-panel-seg-med bd">
+             <!-- 模式 -->
+             <div class="za-panel-seg-med">
                <div class="za-panel-prodtype-name">
                  <div class="cc_out" >
                    <div class="cc_mid_left ">
@@ -136,15 +139,84 @@
                <div class="za-panel-seg-rest ">
                  <div class="cc_out" >
                    <div class="cc_mid ">
-
+                    <span>
+                       <input type="radio"  name="selector">
+                       <label class="za-panel-mright">1</label>
+                       <input type="radio"  name="selector">
+                       <label >2</label>
+                    </span>
                    </div>
                  </div>
                </div>
              </div>
-             <div class="za-panel-seg-long bd">编织结构 </div>
-             <div class="za-panel-seg-med bd">功能风格 </div>
-             <div class="za-panel-seg-med bd">按钮 </div>
-             <div class="za-panel-seg-med bd">logobar </div>
+             <!-- 编织结构 滑动条-->
+             <div class="za-panel-seg-long">
+               <div class="za-panel-prodtype-name">
+                 <div class="cc_out" >
+                   <div class="cc_mid_left ">
+                     编织结构<p class="za-panel-p">structure</p>
+                   </div>
+                 </div>
+               </div>
+               <div class="za-panel-seg-rest za-panel-slider ">
+                 <div class="cc_out" >
+                   <div class="cc_mid ">
+                     <input id="b_sm_3" data-slider-id='sm2Slider'
+                            type="text" data-slider-min="0"
+                            data-slider-max="30" data-slider-step="1" data-slider-value="7"/>
+                     <input id="b_sm_4" data-slider-id='sm2Slider'
+                            type="text" data-slider-min="0"
+                            data-slider-max="30" data-slider-step="1" data-slider-value="22"/>
+                     <input id="b_sm_5" data-slider-id='sm2Slider'
+                            type="text" data-slider-min="0"
+                            data-slider-max="30" data-slider-step="1" data-slider-value="12"/>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <!-- 功能风格-->
+             <div class="za-panel-seg-med">
+               <div class="za-panel-prodtype-name">
+                 <div class="cc_out" >
+                   <div class="cc_mid_left ">
+                     功能风格<p class="za-panel-p">style</p>
+                   </div>
+                 </div>
+               </div>
+               <div class="za-panel-seg-rest ">
+                 <div class="cc_out" >
+                   <div class="cc_mid ">
+                    <span>
+                       <input type="radio"  name="selector">
+                       <label class="za-panel-label za-panel-mright ">微渡竹风</label>
+                       <input type="radio"  name="selector">
+                       <label class="za-panel-label">细浮松月</label>
+                    </span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <!-- 按钮 -->
+             <div class="za-panel-seg-med za-panel-btnarea ">
+               <div class="za-panel-btn">
+                 <div class="cc_out" >
+                   <div class="cc_mid ">
+                     建立
+                   </div>
+                 </div>
+               </div>
+               <div class="za-panel-btn">
+                 <div class="cc_out" >
+                   <div class="cc_mid ">
+                     取消
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+             <div class="za-panel-seg-med za-panel-logobar">
+               <img class="" src="assets/img/i_sign.png" width="100%" >
+             </div>
 
            </div>
         </div>

@@ -82,7 +82,7 @@
     width: 280px;
     height: 280px;
     position: absolute;
-    /*left:-260px;*/
+    left:-270px;
     display: flex;
     flex-direction: column;
     /*background: -webkit-linear-gradient(top,#E7E7E7,#E2E2E3);*/
@@ -91,7 +91,7 @@
     -webkit-box-shadow: 3px 3px 3px #ADADAD;
     -moz-box-shadow: 3px 3px 3px #ADADAD;
     box-shadow: 3px 3px 3px #ADADAD;
-    padding-left: 10px;
+    /*padding-left: 10px;*/
 
 }
 
@@ -99,23 +99,44 @@
     animation:bfunhonverIn 1.5s;
     animation-timing-function: cubic-bezier(.01,.89,0,.98);
 }
+.za-anm-hoverOut{
+    animation:bfunhonverOut 1.5s;
+    animation-timing-function: cubic-bezier(.01,.89,0,.98);
+}
 
 @keyframes bfunhonverIn
 {
-    from {  left: -260px;  }
+    from {  left: -270px;  }
     to {  left:0;  }
+}
+@keyframes bfunhonverOut
+{
+    from {  left:0;  }
+    to {  left:-270px;  }
+}
+.za-panel-seg-tiny{
+    display: flex;
+    flex: 0 0 2%;
+    background-color:#5ECC9D ;
+    border-radius: 0 8px 0 0;
+
 }
 .za-panel-seg-short{
     display: flex;
+    padding-left: 10px;
     flex: 0 0 7%;
 }
 .za-panel-seg-med{
     display: flex;
     flex: 0 0 13%;
+    padding-left: 10px;
+
 }
 .za-panel-seg-long{
     display: flex;
-    flex: 0 0 22%;
+    padding-left: 10px;
+
+    flex: 0 0 30%;
 }
 .za-panel-closemain{
     flex-direction: row-reverse;
@@ -130,10 +151,36 @@
 .za-panel-seg-rest{
     flex: 1;
 }
-.za-panel-p{
+.za-panel-btnarea{
+    flex-direction: row-reverse;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+.za-panel-p,.za-panel-label{
     margin: 0;
     font-size: 11px;
     font-family: Calibri;
+}
+.za-panel-slider{
+    padding-right: 10px;
+}
+.za-panel-btn{
+    flex: 0 0 25%;
+    background-color: #E7E7E7;
+    color: #2D2D2D;
+    width: 80%;
+    margin-left: 2px;
+    /*margin-right: 4px;*/
+    font-size: 11px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+
+.za-panel-mright{
+    margin-right: 10px;
 }
 
 .za-panel-select{
@@ -141,6 +188,10 @@
     width: 80%;
     height: 25px;
     /*border: ;*/
+}
+.za-panel-logobar{
+    flex: 1;
+    padding-left: 0;
 }
 
 .za-body-down{
