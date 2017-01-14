@@ -6,19 +6,21 @@
 //Normal Js
 window.onload=function(){
   document.getElementById("z_container").style.height=document.body.scrollHeight+'px';
-  //document.getElementById("suntext").style.width=document.getElementById("sun1").offsetWidth*2+'px';
-  //document.getElementById("suntext").style.height=document.getElementById("sun1").offsetHeight+'px';
-  //
-  //document.getElementById("wther_filter").style.width=document.getElementById("wther_bg").offsetWidth+'px';
-  //document.getElementById("wther_filter").style.height=document.getElementById("wther_bg").offsetHeight+'px';
-  //
-  //document.getElementById("wther_main").style.width=document.getElementById("wther_filter").offsetWidth+'px';
-  //document.getElementById("wther_main").style.height=document.getElementById("wther_filter").offsetHeight+'px';
-  //
-  //document.getElementById("wther_chart").style.width=document.getElementById("wther_filter").offsetWidth+'px';
-  //document.getElementById("wther_chart").style.height=document.getElementById("wther_filter").offsetHeight+'px';
 
-  //console.log(document.getElementById("vdmenu_1").style);
-  //console.log(document.getElementById("vdmenu_1").style);
 
 };
+
+$("[id^='b_sm']").slider({
+  formatter: function(value) {
+    return value;
+  }
+});
+
+////$(".za-bfun4-select").select2();
+//$("#arhv").hover(function(){
+//  //鼠标进入
+//  $(this).addClass('za-anm-hoverIn').css('left','0');
+//},function(){
+////  鼠标离开
+//});
+//arhv_close

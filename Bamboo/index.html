@@ -4,15 +4,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta charset="UTF-8">
   <title>竹编工坊</title>
+
+  <link rel="shortcut icon" href="favicon.ico" />
+
   <link rel="stylesheet" href="assets/bootstrap.min.css" type="text/css"/>
   <link rel="stylesheet" href="assets/slider.css" type="text/css"/>
+  <link rel="stylesheet" href="assets/select2.min.css" type="text/css"/>
   <link rel="stylesheet" href="assets/zaba.css" type="text/css"/>
+
   <script src="assets/jquery.min.js" type="text/javascript"></script>
   <script src="assets/bootstrap-slider.js" type="text/javascript"></script>
+  <script src="assets/select2.min.js" type="text/javascript"></script>
 
 </head>
 <body class="fixbody">
-<div class="za-container bd" id="z_container">
+<div class="za-container" id="z_container">
   <!-- 头部 -->
   <div class="za-head ">
     <div class="za-head-left">
@@ -78,17 +84,69 @@
   </div>
   <!-- 身段 -->
   <div class="za-body-main ">
-    <div class="za-body-up bd">
-      <div class="za-body-up-left bd">
+    <div class="za-body-up ">
+      <div class="za-body-up-left">
         <div class="za-body-upleft-up">
-          <div class="cc_out">
+          <div class="cc_out" id="arhv_close">
             <div class="cc_mid ">
               <img src="assets/img/body_title.png"  width="60%">
             </div>
           </div>
         </div>
+        <!-- 悬浮框 -->
         <div class="za-body-upleft-down">
-        悬浮框
+           <div  id="arhv" class="za-panel-hover ">
+             <!-- 关闭 -->
+             <div class="za-panel-seg-short za-panel-closemain ">
+               <div class="za-panel-close ">
+                 <div class="cc_out">
+                   <div class="cc_mid ">
+                     <img src="assets/img/i_close.png" width="35%">
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="za-panel-seg-med ">
+                <div class="za-panel-prodtype-name">
+                  <div class="cc_out" >
+                    <div class="cc_mid_left ">
+                      产品类型<p class="za-panel-p">product type</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="za-panel-seg-rest ">
+                  <div class="cc_out" >
+                    <div class="cc_mid ">
+                      <select class="za-panel-select" >
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+             </div>
+             <div class="za-panel-seg-med bd">
+               <div class="za-panel-prodtype-name">
+                 <div class="cc_out" >
+                   <div class="cc_mid_left ">
+                     模式<p class="za-panel-p">patten</p>
+                   </div>
+                 </div>
+               </div>
+               <div class="za-panel-seg-rest ">
+                 <div class="cc_out" >
+                   <div class="cc_mid ">
+
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="za-panel-seg-long bd">编织结构 </div>
+             <div class="za-panel-seg-med bd">功能风格 </div>
+             <div class="za-panel-seg-med bd">按钮 </div>
+             <div class="za-panel-seg-med bd">logobar </div>
+
+           </div>
         </div>
       </div>
       <div class="za-body-up-center">
@@ -125,6 +183,19 @@
       </div>
       <div class="za-bddown-seg">
         <div class="za-bfun-title za-bfun-titlebd">疏密</div>
+        <div class="za-bfun2">
+          <div class="za-bfun2-seg ">
+            <input id="b_sm_1" data-slider-id='sm1Slider'
+                   type="text" data-slider-min="0"
+                   data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+          </div>
+          <div class="za-bfun2-seg ">
+            <input id="b_sm_2" data-slider-id='sm2Slider'
+                   type="text" data-slider-min="0"
+                   data-slider-max="30" data-slider-step="1" data-slider-value="7"/>
+          </div>
+
+        </div>
       </div>
       <div class="za-bddown-seg">
         <div class="za-bfun-title za-bfun-titlebd">纹理</div>
@@ -142,7 +213,17 @@
       </div>
       <div class="za-bddown-seg">
         <div class="za-bfun-title za-bfun-titlebd">尺寸</div>
-
+        <div class="za-bfun4-seg">
+          <select class="za-bfun4-select" >
+            <option value="AL">Alabama</option>
+            <option value="WY">Wyoming</option>
+          </select>
+        </div>
+        <div class="za-bfun4-seg za-bfun4-info">
+          <div class="za-bfun4-info-main">
+            28cm*13cm
+          </div>
+        </div>
       </div>
       <div class="za-bddown-seg za-bddown-seg-long">
         <div class="za-bfun-title za-bfun-titlebd">材料</div>
@@ -193,14 +274,14 @@
         <div class="za-bfun7-btnarea ">
           <div class="za-bfun-title"></div>
           <div class="za-bfun-main">
-            <div class="za-btn">
+            <div class="za-btn blink">
               <div class="cc_out">
                 <div class="cc_mid ">
                   保存
                 </div>
               </div>
             </div>
-            <div class="za-btn za-btn2">
+            <div class="za-btn za-btn2 blink">
               <div class="cc_out">
                 <div class="cc_mid ">
                   购买
