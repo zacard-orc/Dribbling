@@ -1,6 +1,7 @@
 # Dribbling
 > 闲来无事，将dribble好作品记录下</br>
 > Mark excellent production in leisure time
+> 作者目前可用语言及工具：iOS、Android NDK、Nginx ext/lua、TCP/IP、Vue/React Native、NodeJs Co/Express、Python ML/Flask、 Js/ES6/ES7、Css
 
 ## Aspree
  ![image](https://github.com/zacard-orc/Dribbling/raw/master/DemoImg/001_Aspree.jpg)
