@@ -20,7 +20,7 @@
 
 ## Cayman
  ![image](https://github.com/zacard-orc/Dribbling/raw/master/DemoImg/003_Cayman.gif)
-> 来自于对<a href="https://dribbble.com/shots/943079-Webapp-Dashboard">Ben Garratt</a>作品<a href="https://dribbble.com/shots/943079-Webapp-Dashboard">Webapp Dashboard</a>的模仿，基于VUE框架</br>
+> 来自于对<a href="https://dribbble.com/shots/943079-Webapp-Dashboard">Ben Garratt</a>作品<a href="https://dribbble.com/shots/943079-Webapp-Dashboard">Webapp Dashboard</a>的模仿，基于Vue2.x框架</br>
 > Vue + Vuex + Vue-router + Vue-resouce + webpack 都是2017.7最新版本
 > 
 > From <a href="https://dribbble.com/shots/943079-Webapp-Dashboard">Ben Garratt</a>'s production imitation,not support IE10-</br>
